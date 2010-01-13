@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slideshow>
+	<!-- PROPERTIES -->  
+	<properties>
+		
+		<!-- LIVE SETTINGS  	
+		<item_host></item_host>
+		<item_root>/images/billboard/items/</item_root>		
+		 -->  
+			
+		<!-- LOCAL FLASHDEVELOP SETTINGS  -->	
+		<item_host></item_host>
+		<item_root>../images/billboard/items/</item_root>
+		
+			
+		<!-- LOCAL IN BROWSER (HTML PAGE) SETTINGS  
+		<item_host></item_host>
+		<item_root>images/billboard/items/</item_root>
+		--> 
+			
+		<!-- GOOGLE ANALYTIC -->
+		<ga active="false">
+			<account_id>UA-5101272-1</account_id>
+			<bridge_mode>AS3</bridge_mode>
+			<debug_mode>true</debug_mode>
+		</ga>
+		
+	</properties>	
+	
+  	<!-- NAVIGATION -->
+	<navigations active="true">
+		<navigation>
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="" target="" gotoSlide="1" type="mouseover" />
+				<analytics eventCategory="" eventAction="" eventLabel="" eventValue="" />
+				<upState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm01.jpg</file_name>
+					</item>			
+				</upState>
+				<overState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm01.jpg</file_name>
+					</item>
+					<item type="flash"> 
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>nav_button_2.swf</file_name>
+					</item>
+				</overState>
+				<downState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm01.jpg</file_name>
+					</item>	
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+		</navigation>	
+		
+		<navigation>
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="" target="" gotoSlide="2" type="mouseover" />
+				<analytics eventCategory="" eventAction="" eventLabel="" eventValue="" />
+				<upState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="86" end_x="0" end_y="86" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm02.jpg</file_name>
+					</item>			
+				</upState>
+				<overState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="86" end_x="0" end_y="86" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm02.jpg</file_name>
+					</item>	
+					<item type="flash"> 
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="86" end_x="0" end_y="86" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>nav_button_2.swf</file_name>
+					</item>
+				</overState>
+				<downState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="86" end_x="0" end_y="86" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm02.jpg</file_name>
+					</item>	
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+		</navigation>		
+
+		<navigation>
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="" target="" gotoSlide="3" type="mouseover" />
+				<analytics eventCategory="" eventAction="" eventLabel="" eventValue="" />
+				<upState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="172" end_x="0" end_y="172" fade_in="false" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm03.jpg</file_name>
+					</item>			
+				</upState>
+				<overState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="172" end_x="0" end_y="172" fade_in="false" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm03.jpg</file_name>
+					</item>
+					<item type="flash"> 
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="172" end_x="0" end_y="172" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>nav_button_2.swf</file_name>
+					</item>
+				</overState>
+				<downState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="172" end_x="0" end_y="172" fade_in="false" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm03.jpg</file_name>
+					</item>	
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+		</navigation>			
+	
+		<navigation>
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="" target="" gotoSlide="4" type="mouseover" />
+				<analytics eventCategory="" eventAction="" eventLabel="" eventValue="" />
+				<upState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="258" end_x="0" end_y="258" fade_in="false" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm04.jpg</file_name>
+					</item>			
+				</upState>
+				<overState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="258" end_x="0" end_y="258" fade_in="false" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm04.jpg</file_name>
+					</item>
+					<item type="flash"> 
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="0" start_y="258" end_x="0" end_y="258" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>nav_button_2.swf</file_name>
+					</item>
+				</overState>
+				<downState>
+					<item type="image">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="0" start_y="258" end_x="0" end_y="258" fade_in="false" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>Billbsm04.jpg</file_name>
+					</item>	
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+		</navigation>
+	
+	</navigations>
+	
+	<slides>
+		
+		<!-- ############################################ slide 1 ############################################ 	-->	
+		
+		<slide slideDuration="5">	
+			
+			<item type="image">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="86" start_y="0" end_x="86" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<file_name>Billboard01.jpg</file_name>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />
+				<anim start_x="116" start_y="34" end_x="116" end_y="34" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_TradeGothicBold.swf" color="0xffffff" size="25.5" leading="2" width="350" border="false">Lighter, faster communications.</text>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="116" start_y="75" end_x="116" end_y="75" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_Verdana.swf" color="0xffffff" size="12" leading="1" width="305" border="false">Tactical satellite communication systems provide the backbone for your network, linking ground, air and sea units with command centers.</text>
+			</item>		
+			
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="/utilities-solutions" target="_top" gotoSlide="" type="mousedown" />
+				<analytics eventCategory="button" eventAction="pressed" eventLabel="billboard: go to utilities-solutions page." eventValue="" />
+				<upState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="120" start_y="138" end_x="120" end_y="138" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>	
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="133" end_x="135" end_y="133" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="3" width="225" border="false">Prepare for battle with Hughes.</text>
+					</item>	
+				</upState>
+				<overState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="120" start_y="138" end_x="120" end_y="138" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="133" end_x="135" end_y="133" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="3" width="225" border="false">Prepare for battle with Hughes.</text>
+					</item>	
+				</overState>
+				<downState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="120" start_y="138" end_x="120" end_y="138" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="133" end_x="135" end_y="133" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0x2FB9EA" size="17" leading="3" width="225" border="false">Prepare for battle with Hughes.</text>
+					</item>				
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>			
+
+		</slide>
+
+		<!-- ############################################ slide 2 ############################################ -->
+	
+		<slide slideDuration="600">
+			
+			<item type="image">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="86" start_y="0" end_x="86" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<file_name>Billboard02.jpg</file_name>
+			</item>	
+			
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />
+				<anim start_x="115" start_y="175" end_x="115" end_y="175" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_TradeGothicBold.swf" color="0xffffff" size="25.5" leading="2" width="230" border="false">Suit up with Hughes.</text>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="117" start_y="214" end_x="117" end_y="214" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_Verdana.swf" color="0xffffff" size="12" leading="1.8" width="275" border="false">Today's modern warfare isn't waged on a finite, fixed battlefield. You need solid, high-performance communications capabilities wherever the campaign takes you.</text>
+			</item>	
+			
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="/utilities-solutions" target="_top" gotoSlide="" type="mousedown" />
+				<analytics eventCategory="button" eventAction="pressed" eventLabel="billboard: go to utilities-solutions page." eventValue="" />
+				<upState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="122" start_y="294" end_x="122" end_y="294" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>	
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="290" end_x="135" end_y="290" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="3" width="220" border="false">Get connected today.</text>
+					</item>	
+				</upState>
+				<overState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="122" start_y="294" end_x="122" end_y="294" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="290" end_x="135" end_y="290" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="3" width="220" border="false">Get connected today.</text>
+					</item>	
+				</overState>
+				<downState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="122" start_y="294" end_x="122" end_y="294" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="290" end_x="135" end_y="290" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0x2FB9EA" size="17" leading="3" width="220" border="false">Get connected today.</text>
+					</item>				
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+
+		</slide>
+
+		<!-- ############################################ slide 3 ############################################  -->
+			
+		<slide slideDuration="5">
+			
+			<item type="image">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="86" start_y="0" end_x="86" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<file_name>Billboard03.jpg</file_name>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />
+				<anim start_x="115" start_y="56" end_x="115" end_y="56" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_TradeGothicBold.swf" color="0xffffff" size="25.5" leading="0.5" width="220" border="false">Better technology is the best defense.</text>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="118" start_y="128" end_x="118" end_y="128" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_Verdana.swf" color="0xffffff" size="12" leading="1" width="230" border="false">Wars used to be won with grit, determination and attrition. In many ways, they still are. But without the best technology on your side, victory can prove elusive regardless of passion or effort.</text>
+			</item>	
+			
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="/utilities-solutions" target="_top" gotoSlide="" type="mousedown" />
+				<analytics eventCategory="button" eventAction="pressed" eventLabel="billboard: go to utilities-solutions page." eventValue="" />
+				<upState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="120" start_y="240" end_x="120" end_y="240" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>	
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="235" end_x="135" end_y="235" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="1" width="160" border="false">Click here and see how Hughes delivers.</text>
+					</item>	
+				</upState>
+				<overState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="120" start_y="240" end_x="120" end_y="240" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+					<anim start_x="135" start_y="235" end_x="135" end_y="235" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="1" width="160" border="false">Click here and see how Hughes delivers.</text>
+					</item>	
+				</overState>
+				<downState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="120" start_y="240" end_x="120" end_y="240" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="235" end_x="135" end_y="235" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0x2FB9EA" size="17" leading="1" width="160" border="false">Click here and see how Hughes delivers.</text>
+					</item>				
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+
+		</slide>
+	
+		<!-- ############################################ slide 4 ############################################ -->
+		
+		<slide slideDuration="5">
+			
+			<item type="image">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="86" start_y="0" end_x="86" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<file_name>Billboard04.jpg</file_name>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />
+				<anim start_x="118" start_y="75" end_x="118" end_y="75" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_TradeGothicBold.swf" color="0xffffff" size="25.5" leading="0.5" width="270" border="false">Rapid deployment. Robust communications.</text>
+			</item>		
+			<item type="text">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="118" start_y="148" end_x="118" end_y="148" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<text font="font_Verdana.swf" color="0xffffff" size="12" leading="1" width="270" border="false">You can't always plan where you’ll be when you need a connection. Luckily, Hughes delivers integrated, rugged equipment that enables superior communications in any environment.</text>
+			</item>	
+			
+			<item type="button">
+				<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+				<anim start_x="0" start_y="0" end_x="0" end_y="0" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+				<a href="/utilities-solutions" target="_top" gotoSlide="" type="mousedown" />
+				<analytics eventCategory="button" eventAction="pressed" eventLabel="billboard: go to utilities-solutions page." eventValue="" />
+				<upState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="0.5" filter="" />		
+						<anim start_x="120" start_y="244" end_x="120" end_y="244" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>	
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="240" end_x="135" end_y="240" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="3" width="220" border="false">Hook up with Hughes.</text>
+					</item>	
+				</upState>
+				<overState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="120" start_y="244" end_x="120" end_y="244" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="240" end_x="135" end_y="240" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0xffffff" size="17" leading="3" width="220" border="false">Hook up with Hughes.</text>
+					</item>	
+				</overState>
+				<downState>
+					<item type="flash">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="120" start_y="244" end_x="120" end_y="244" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<file_name>arrow_1.swf</file_name>
+					</item>		
+					<item type="text">
+						<prop x_scale="1" y_scale="1" transparency="1" filter="" />		
+						<anim start_x="135" start_y="240" end_x="135" end_y="240" fade_in="true" duration="1" delay="0" easing="Strong.easeOut" />
+						<text font="font_TradeGothicBold.swf" color="0x2FB9EA" size="17" leading="3" width="220" border="false">Hook up with Hughes.</text>
+					</item>				
+				</downState>
+				<hitTestState></hitTestState>			
+			</item>	
+
+		</slide>	
+		
+	</slides>
+</slideshow>

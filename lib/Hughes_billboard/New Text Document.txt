@@ -1,0 +1,133 @@
+package {
+    /*
+    Usage
+    =====
+    
+    1. Create a .FLA that will contain the fonts.
+       Add a new Font to the library, and export it for ActionScript.
+         The classname assigned to it is important (but you can call it whatever).
+    2. Publish this file as a .SWF, and upload to <AssetsUrl> from config.xml
+    3. In the <init>-section of config.xml, create a tree similar to this:
+       <fonts>
+           <file name="myfonts.swf">
+               <font class="font01">Arial</font>
+                 <font class="font02">Tahoma</font>
+             </file>
+     </fonts>
+         In the class-attribute, use the classname assigned to the font in step 1.
+         The value in the <font>-tags is the real name of the font, and the one that
+         should be used in the stylesheet.
+    4. To actually use the fonts, the CSS used for the style should contain
+         font-family: real-name-of-font.
+         It will not work to have multiple fonts chosen here.
+    5. Text using embedded fonts should be created like this:
+         myTextField.styleSheet = referenceToStylesheet; 
+       myTextField.embedFonts = true;
+       myTextField.htmlText = "<h1>This is the headline</h1>";
+         And it will use the style assigned to h1's, hopefully with the embedded fonts.
+    */
+    
+    import flash.events.*;
+    import flash.text.*;
+    import flash.errors.*;
+    import flash.system.*;
+    import flash.display.Sprite;
+    import flash.net.URLRequest;
+    import flash.display.Loader;
+    import t;
+    
+    public final class MemoAsset extends Sprite {
+        private static var instance:MemoAsset;
+        private var _domain:String;
+        private var _xml:XMLList;
+        private var _totalFiles:int   = 0; // Number of font files we found in the configuration
+        private var _filesLoaded:int  = 0; // Number of font files currently loaded
+        private var _fontsDomain:Array = new Array(); // Array of ApplicationDomains from each loaded SWF.
+        
+        public function MemoAsset() {
+            super();
+        }
+        
+        public static function getInstance():MemoAsset {
+            if (instance == null) {
+                instance = new MemoAsset();
+            }
+            
+            return instance;
+        }
+        
+        public function init(domain:String, config:XMLList):void {
+            _domain = domain;
+            _xml = config;
+            loadSWF();
+        }
+        
+        private function loadSWF():void {
+            _totalFiles = _xml.fonts.file.length();
+            trace("FONT: Need to load "+_totalFiles+" files with fonts");
+            for each (var file:XML in _xml.fonts.file) {
+                var request:URLRequest = new URLRequest(_domain+_xml.AssetsUrl+file.@name);
+                var loader:Loader      = new Loader();
+                trace("Trying to load "+ _domain+_xml.AssetsUrl+file.@name);
+                loader.load(request, new LoaderContext(true, ApplicationDomain.currentDomain, SecurityDomain.currentDomain));
+                loader.contentLoaderInfo.addEventListener("ioError",  swfIOErrorHandler);
+                loader.contentLoaderInfo.addEventListener("complete", swfLoadedHandler);
+            }
+        }
+        
+        private function swfIOErrorHandler(e:Event):void {
+            trace("Unable to load the SWF containing fonts!");
+            /* We just increment this so swfLoadedHandler won't hang forever.
+               If we don't, it will freeze if one or more files can't be found, since
+                 then the check would never return true.
+            */
+            _filesLoaded++; 
+        }
+        
+        private function swfLoadedHandler(e:Event):void {
+            trace("Successfully loaded a SWF with fonts ("+(_filesLoaded+1)+"/"+_totalFiles+")");
+            _fontsDomain.push(e.target.applicationDomain);
+            if(++_filesLoaded == _totalFiles) {
+                registerFonts();
+            }
+        }
+        
+        private function registerFonts():void {
+            for each(var file:XML in _xml.fonts.file) {
+                for each(var font:XML in file.font) {
+                    try {
+                        Font.registerFont(getFontClass(font.attribute("class")));
+                    } catch(e:Error) {
+                        trace("Unable to register font");
+                        trace(e.message);
+                    }
+                }
+            }
+        }
+        
+        public function getFontClass(id:String):Class {
+            trace("Searching for a class for "+ id);
+            for each(var domain:ApplicationDomain in _fontsDomain) {
+                if(domain.hasDefinition(id)) {
+                    trace("  Found it!");
+                    return domain.getDefinition(id) as Class;
+                }
+            }
+            
+            throw new Error("Unable to find a class for "+ id);
+        }
+        
+        public function getFont(id:String):Font {
+            try {
+                trace("getFont searching for "+ id);
+                var fontClass:Class = getFontClass(id);
+                return new fontClass as Font;
+            } catch(e:Error) {
+                trace(e.message);
+                t.obj(e);
+            }
+            
+            return new Font(); // Try a fallback
+        }
+    }
+}
